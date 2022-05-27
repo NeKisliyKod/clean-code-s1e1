@@ -37,14 +37,16 @@ var createNewTaskElement = function (taskString) {
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
+  checkBox.className = "taskSwitcher inputElem";
   editInput.type = "text";
-  editInput.className = "task";
+  editInput.className = "task inputElem";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "edit";
+  editButton.className = "btn edit";
 
-  deleteButton.className = "delete";
+  deleteButton.className = "btn delete";
   deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.className = 'btn__img';
   deleteButton.appendChild(deleteButtonImg);
 
 
@@ -54,6 +56,7 @@ var createNewTaskElement = function (taskString) {
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
+  listItem.className = 'list__item';
   return listItem;
 }
 
