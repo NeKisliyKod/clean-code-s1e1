@@ -33,18 +33,18 @@ var createNewTaskElement = function (taskString) {
   var deleteButtonImg = document.createElement("img"); //delete button image
 
   label.innerText = taskString;
-  label.className = 'task';
+  label.className = 'task__name';
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
-  checkBox.className = "taskSwitcher inputElem";
+  checkBox.className = "task__switcher";
   editInput.type = "text";
-  editInput.className = "task inputElem";
+  editInput.className = "inputElem";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "btn edit";
+  editButton.className = "btn task__edit";
 
-  deleteButton.className = "btn delete";
+  deleteButton.className = "btn task__delete";
   deleteButtonImg.src = './remove.svg';
   deleteButtonImg.className = 'btn__img';
   deleteButton.appendChild(deleteButtonImg);
@@ -56,7 +56,7 @@ var createNewTaskElement = function (taskString) {
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
-  listItem.className = 'list__item';
+  listItem.className = 'task';
   return listItem;
 }
 
@@ -87,7 +87,7 @@ var editTask = function () {
 
   var editInput = listItem.querySelector('input[type=text]');
   var label = listItem.querySelector("label");
-  var editBtn = listItem.querySelector(".edit");
+  var editBtn = listItem.querySelector(".task__edit");
   var containsClass = listItem.classList.contains("edit-mode");
   //If class of the parent is .editmode
   if (containsClass) {
@@ -159,8 +159,8 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
   var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector("button.edit");
-  var deleteButton = taskListItem.querySelector("button.delete");
+  var editButton = taskListItem.querySelector(".task__edit");
+  var deleteButton = taskListItem.querySelector(".task__delete");
 
 
   //Bind editTask to edit button.
