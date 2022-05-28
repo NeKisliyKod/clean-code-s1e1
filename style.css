@@ -84,7 +84,7 @@
 .todoApp__heading{
   margin: 0;
 }
-.todoApp__list_completed .task {
+.todoApp__list_completed .task__name {
   text-decoration: line-through;
   color: #888;
 }
