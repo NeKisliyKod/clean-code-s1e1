@@ -1,11 +1,8 @@
-/* Basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-
-/* Common blocks */
 .heading {
   color: #333;
   font-weight: 700;
@@ -14,7 +11,6 @@
   padding: 30px 0 10px;
   text-transform: uppercase;
 }
-
 .inputElem {
   outline: none;
   font-size: 18px;
@@ -31,7 +27,6 @@
 .inputElem:focus {
   color: #333;
 }
-
 .btn {
   background: none;
   border: 0px;
@@ -52,8 +47,6 @@
 .btn__img:hover {
   transform: rotateZ(0);
 }
-
-/* signboard */
 .page__signboard{
   margin: 0 auto;
 }
@@ -68,8 +61,6 @@
 .signboard .signboard__inf {
   font-family: fantasy, cursive;
 }
-
-/* todoApp */
 .page__todoApp{
   margin: 0 auto 0;
 }
@@ -88,8 +79,6 @@
   text-decoration: line-through;
   color: #888;
 }
-
-/* taskEditor */
 .todoApp__taskEditor{
   margin: 1em 0;
 }
@@ -100,8 +89,6 @@
 .taskEditor__entrance {
   display: flex;
 }
-
-/* task */
 .task {
   overflow: hidden;
   padding: 18px 0;
@@ -119,8 +106,6 @@
   box-sizing: border-box;
   font-size: 18px;
 }
-
-/* Edit Task */
 .task .inputElem {
   display: none;
 }
@@ -131,7 +116,6 @@
 .edit-mode .task__name {
   display: none;
 }
-
 @media (max-width:768px) {
 
   .signboard { 
