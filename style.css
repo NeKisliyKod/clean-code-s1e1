@@ -1,0 +1,125 @@
+.page {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+.heading {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  text-transform: uppercase;
+}
+.inputElem {
+  outline: none;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+  flex-grow: 1;
+}
+.inputElem:focus {
+  color: #333;
+}
+.btn {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #3a3a3a;
+}
+.btn__img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+.btn__img:hover {
+  transform: rotateZ(0);
+}
+.page__signboard{
+  margin: 0 auto;
+}
+.signboard {
+  width: 500px;
+  display: block;
+  text-align: right;
+}
+.signboard .signboard__img {
+  width: 100%;
+}
+.signboard .signboard__inf {
+  font-family: fantasy, cursive;
+}
+.page__todoApp{
+  margin: 0 auto 0;
+}
+.todoApp {
+  display: block;
+  width: 500px;
+}
+.todoApp__list{
+  margin: 0;
+  padding: 0px;
+}
+.todoApp__heading{
+  margin: 0;
+}
+.todoApp__list_completed .task__name {
+  text-decoration: line-through;
+  color: #888;
+}
+.todoApp__taskEditor{
+  margin: 1em 0;
+}
+.taskEditor__heading {
+  display: block;
+  margin: 0 0 20px;
+}
+.taskEditor__entrance {
+  display: flex;
+}
+.task {
+  overflow: hidden;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task__switcher {
+  margin: 0 10px;
+}
+.task__name {
+  flex-grow: 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.task .inputElem {
+  display: none;
+}
+.edit-mode .inputElem {
+  display: inline-block;
+  width: 224px;
+}
+.edit-mode .task__name {
+  display: none;
+}
+@media (max-width:768px) {
+
+  .signboard { 
+    text-align: center;
+  }
+
+}
